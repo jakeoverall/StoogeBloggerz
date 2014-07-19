@@ -9,5 +9,5 @@
  */
 angular.module('stoogebloggerzApp')
   .controller('PostsCtrl', function ($scope, posts) {
-      $scope.Posts = posts;
+      $scope.Posts = posts.getPosts();
   });

@@ -9,5 +9,15 @@
  */
 angular.module('stoogebloggerzApp')
   .service('authors', function authors() {
-      return ['Larry', 'Curly', 'Moe'];
+      this.authors = [{
+          'name': 'Larry'
+      }, {
+          'name': 'Curly'
+      }, {
+          'name': 'Moe'
+      }];
+
+      this.getAuthors = function() {
+          return this.authors;
+      };
   });

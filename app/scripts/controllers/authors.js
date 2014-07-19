@@ -9,7 +9,7 @@
  */
 angular.module('stoogebloggerzApp')
   .controller('AuthorsCtrl', function ($scope, authors) {
-      $scope.authorsList = authors;
+      $scope.authorsList = authors.getAuthors();
 
       $scope.filterAuthor = '';
       $scope.changeAuth = function (author) {
