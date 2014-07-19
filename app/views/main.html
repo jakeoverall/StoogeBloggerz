@@ -1,0 +1,10 @@
+<div class="blog" ng-controller="PostsCtrl">
+    <h4>Latest Posts</h4>
+    <div ng-repeat="post in Posts | filter:filterAuthor">
+        <h1>{{post.title}}</h1>
+        <div>
+            <p>{{post.body}}</p>
+            <p>{{post.author}}</p>
+        </div>
+    </div>
+</div>
